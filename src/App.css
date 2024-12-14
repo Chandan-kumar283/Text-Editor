@@ -1,42 +1,145 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-* {
-  margin: 3px;
-  padding: 3px;
+*{
+  margin: 1px;
+  padding: 1px;
 }
-
 .nav {
   display: flex;
   gap: 15px;
   list-style: none;
-  padding: 10px;
+  padding: 15px;
   border-bottom: 1px solid gray;
 }
 
 .nav li a {
   text-decoration: none;
+  color: white;
 }
 .nav li a:hover {
   font-weight: bold;
 }
-.nav .btn {
-  margin-left: auto;
-  transition: all 0.3s ease;
-}
-.nav .btn:hover {
-  background-color: #333;
+.big-container {
   color: white;
-  border-color: #007bff;
 }
 .form-control {
-  width: 60vw;
+  width: 50vw;
   height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(0.5px);
+  border: none;
+  text-shadow: #333;
 }
+#myBox::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
 .btn2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.sbox {
+  backdrop-filter: blur(20px);
+  color: #fff;
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+}
+.h1-contact{
+  text-align: center;
+   font-size: 4rem;
+   margin: auto;
+   color: #131212;
+}
+.span2{
+  color: rgb(245, 245, 30);
+}
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: auto;
+  margin: auto;
+  transition: transform 0.3s, box-shadow 0.3s;  
+}
+.contact-links .reach-out h6{
+  color: white;
+  text-align: center;
+  text-decoration:none;
+}
+#whatsapp img:hover{
+  transform: scale(1.1,1.1);
+}
+#whatsapp h6:hover{
+ font-weight: bold;
+ color: rgb(245, 9, 9);
+}
+#linkedin img:hover{
+  transform: scale(1.1,1.1);
+}
+#linkedin h6:hover{
+ font-weight: bold;
+ color: rgb(235, 4, 4);
+}
+#mail img:hover{
+  transform: scale(1.1,1.1);
+}
+#mail h6:hover{
+ font-weight: bold;
+ color: rgb(230, 8, 8);
+}
+.h6-grey{
+  color: fff;
+  text-align: center;
+}
+.des .h5{
+  color: rgb(241, 7, 7);
+}
+.des{
+  text-align: center;
+}
+.div1{
+  backdrop-filter: blur(20px);
+}
+.div1 .pp{
+  text-align: center;
+}
+.payment{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+.payment h6 {
+  text-align: center;
+  color: white;
+}
+.h4{
+  text-align: center;
+  
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-control {
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    gap: 10px;
+  }
+  .form-control {
+    padding: 10px;
+  }
 }

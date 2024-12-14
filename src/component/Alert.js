@@ -7,9 +7,12 @@ import React from "react";
           return lower.charAt(0).toUpperCase() +lower.slice(1);
     }
 return (
-    props.alert &&  <div className={`alert alert-${props.alert.typ} `}role="alert">
+   
+ <div style={{height : "50px"}}>
+   { props.alert &&  <div className={`alert alert-${props.alert.typ} `}role="alert">
       <strong>{capitalize(props.alert.typ)}</strong> {props.alert.msg}
-    </div>
+    </div>}
+ </div>
   );
 }
 
